@@ -2,13 +2,8 @@ bin/
 cache/
 cli/
 img/
-layouts/
-libraries/
 tmp/
 language/
 administrator/language/
 administrator/cache/
-administrator/logs/
-administrator/layouts/
-administrator/libraries/
 administrator/help/
