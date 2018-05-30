@@ -1,0 +1,192 @@
+
+/* Reusable column setup */
+.container_12 {
+     float:left; 
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+
+
+    /* 1. 12 Column Grid 0px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    6.5%
+    Span 2:    15.0%
+    Span 3:    23.5%
+    Span 4:    32.0%
+    Span 5:    40.5%
+    Span 6:    49.0%
+    Span 7:    57.5%
+    Span 8:    66.0%
+    Span 9:    74.5%
+    Span 10:    83.0%
+    Span 11:    91.5%
+    Span 12:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 737px) {
+	
+	/* .page {
+     margin: 60px auto 0;
+     max-width: 75%;
+     overflow:hidden;
+     position:relative;
+	 
+} */
+        
+        .container_12 {
+		    width:98%;
+            margin-left:2%;
+        	 padding: 0 1.5%; 
+			text-align:center !important;
+        }
+        
+        /*  .row .col:first-child {
+            margin-left:0;
+        } */
+       
+        
+        .grid_1, .grid_2 , .grid_3,.grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11,  .grid_12 {
+		  float:left; 
+		 padding:0% 1.5%; 
+		 -webkit-box-sizing:border-box;
+         -moz-box-sizing:border-box;
+         box-sizing:border-box;
+        -moz-background-clip:padding-box !important;
+        -webkit-background-clip:padding-box !important;
+         background-clip:padding-box !important;
+		 }
+        
+        .grid_1 {
+            width:6.5%;
+        }
+        .grid_2 {
+            width:15.0%;
+        }
+        .grid_3 {
+            width:23.5%;
+        }
+        .grid_4 {
+            width:32.0%;
+        }
+        .grid_5 {
+            width:40.5%;
+        }
+        .grid_6 {
+            width:49.0%;
+        }
+        .grid_7 {
+            width:57.5%;
+        }
+        .grid_8 {
+            width:66.0%;
+        }
+        .grid_9 {
+            width:74.5%;
+        }
+        .grid_10 {
+            width:83.0%;
+        }
+        .grid_11 {
+            width:91.5%;
+        }
+        .grid_12 {
+            margin-left:0;
+            width:100%;
+			
+        }
+    }
+	
+	
+	@media screen and (max-width: 736px) {
+	
+	.page {
+     margin: 0px auto 0px;
+     max-width: 95%;
+      overflow:hidden; 
+     position:relative;
+	 box-sizing: border-box !important; 	
+	 
+}
+
+.grid_1, .grid_2 , .grid_3,.grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11,  .grid_12 {
+		  float:left; 
+		 padding:0% 1.5%; 
+		 -webkit-box-sizing:border-box;
+         -moz-box-sizing:border-box;
+         box-sizing:border-box;
+        -moz-background-clip:padding-box !important;
+        -webkit-background-clip:padding-box !important;
+         background-clip:padding-box !important;
+		 }
+	 
+	 .grid_1 {
+            width:100%;
+        }
+        .grid_2 {
+            width:100%;
+        }
+        .grid_3 {
+            width:100%;
+			
+        }
+        .grid_4 {
+            width:100%;
+        }
+        .grid_5 {
+            width:100%;
+        }
+        .grid_6 {
+            width:100%;
+        }
+        .grid_7 {
+            width:100%;
+        }
+        .grid_8 {
+            width:100%;
+        }
+        .grid_9 {
+            width:100%;
+        }
+        .grid_10 {
+            width:100%;
+        }
+        .grid_11 {
+            width:100%;
+        }
+        .grid_12 {
+            margin-left:0;
+            width:100%;
+        }
+
+}
+
+
+
+ @media only screen and (min-width: 737px) and (max-width: 1299px) {
+	.page {
+     margin: 0px auto 0px;
+     max-width: 95%;
+     overflow:hidden;
+     position:relative;
+	 box-sizing: border-box !important; 	 
+}
+}    
+
+
+  @media screen and (min-width: 1300px) {
+	.page {
+     margin: 0px auto 0px;
+     max-width: 66%;
+    /*  overflow:hidden; */
+     position:relative;
+	 box-sizing: border-box !important; 
+		 
+}
+}

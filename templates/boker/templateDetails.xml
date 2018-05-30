@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.6" type="template" client="site">
+	<name>boker</name>
+	<creationDate>novembre/2016</creationDate>
+	<author>globbers</author>
+	<authorEmail>globbers@hotmail.fr</authorEmail>
+	<authorUrl>http://www.globbersthemes.com</authorUrl>
+	<copyright>Copyright (C) Globbersthemes License All rights reserved.</copyright>
+	<version>3.0.0</version>
+	<description> 
+	 <![CDATA[
+	   <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+	      <br>
+	      <h1 class="temph1"style="text-align:center;">BOKER JOOMLA TEMPLATE</h1>
+		  <br /><br />
+	      <span style="color:red; font-weight: bold; text-align:center;">!Not for commercial!!! for commercial use, you must pay a special license (5 EURO) .</span> <br />		  
+	      <h4 class="temph4" style="text-align:center;">Beautiful Fast & Light joomla Template</h4>
+	      <p class="text_propery" style="text-align:center">Powerfull admin area allow easy control templeate elements like fonts, logo, colors etc. Fully responsive grid.</p>
+	      <br> <br />
+	      <div id="down_pictures" style="text-align:center;"> 
+		    <a href="http://www.globbersthemes.com"><img style="width:500px;height:383px;text-align:center;" src="../templates/boker/boker_features.jpg"></a>
+		    <div style="clear:both;"></div>
+	      </div>
+			<br /><br />]]>
+	</description>
+
+	<files>
+		<folder>admin</folder>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>language</folder>
+		<folder>fonts</folder>
+		<folder>framework</folder>
+		<filename>template.php</filename>
+        <filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>boker_features.jpg</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>error.php</filename>
+		<filename>globbersthemes_template_logo.png</filename>
+		<filename>favicon.gif</filename>	
+	</files>
+
+	<positions>
+	    <position>position-1</position>
+		<position>slideshow</position>
+		<position>carrousel</position>
+		<position>parallax</position>
+		<position>Top1</position>
+		<position>Top2</position>
+		<position>Top3</position>
+		<position>Top4</position>
+		<position>feature1</position>
+		<position>feature2</position>
+		<position>feature3</position>
+		<position>feature4</position>
+		<position>beforecontent1</position>
+		<position>beforecontent2</position>
+		<position>beforecontent3</position>
+		<position>beforecontent4</position>
+		<position>left</position>
+		<position>right</position>
+		<position>aftercontent1</position>
+		<position>aftercontent2</position>
+		<position>aftercontent3</position>
+		<position>aftercontent4</position>
+		<position>bottomcontent1</position>
+		<position>bottomcontent2</position>
+		<position>bottomcontent3</position>
+		<position>bottomcontent4</position>
+		<position>footertop1</position>
+		<position>footertop2</position>
+		<position>footertop3</position>
+		<position>footertop4</position>
+		<position>footerbottom1</position>
+		<position>footerbottom2</position>
+		<position>footerbottom3</position>
+		<position>footerbottom4</position>
+	</positions>
+
+<config>
+
+	<fields name="params" addfieldpath="/templates/boker/elements">
+        <fieldset  name="body" type="upload_func" label="Body">
+		    <field name="btlabout" type="btlabout" description="" label="" />	
+			<field name="body_background_color" type="color" label="Body Background Color:" description="Example: #000000" default="#ffffff"></field>
+			<field name="body_color" type="color" label="Body Text Color:" description="Example: #000000" default="#999999"></field>
+			<field name="body_link_color" type="color" label="Body Links color:" default="#161616"></field>
+			<field name="body_link_hover_color" type="color" label="Body Links Hover Color:" description="Example: #000000" default="#c5896f"></field>
+			<field name="body_underline" type="radio" class="btn-group" label="Body Links Underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field> 
+			<field name="body_hover_underline" type="radio" class="btn-group" label="Body Links Hover Underline:" default="none">
+			    <option value="underline">yes</option>
+			    <option value="none">no</option>
+			</field>
+            <field name="h1_color" type="color" label="Title h1 Text Color:" description="Example: #000000" default="#252525"></field>	
+            <field name="h2_color" type="color" label="Title h2 Text Color:" description="Example: #000000" default="#252525"></field>	
+            <field name="h3_color" type="color" label="Title h3 Text Color:" description="Example: #000000" default="#252525"></field>
+            <field name="h_color" type="color" label="Title h4,h5,h6 Text Color:" description="Example: #000000" default="#252525"></field>			
+	</fieldset>
+	
+	<fieldset  name="logo" type="upload_func" label="Logo">
+		<field name="logo" type="media" label="Logo Image:" description="your logo image here" />
+        <field name="sitetitle"  type="text" default="boker" label="Sitename:" description="your sitename here" filter="string" />
+		<field name="slogan"  type="text" default="" label="Slogan:" description="your slogan here" filter="string" />
+		<field name="logo_color" type="color" label="Logo Text Color:" description="Example: #000000" default="#000000"></field>
+		<field name="logo_color_hover" type="color" label="Logo Text Color Hover:" description="Example: #2e2e2e" default="#999999"></field>
+		<field name="logo_style" type="list" default="uppercase" label="Aspect Text:" description="">
+		    <option value="capitalize">capitalize</option>
+			<option value="uppercase">uppercase</option>
+		</field>
+	</fieldset>
+	
+	
+	
+	<fieldset  name="top_menu" type="upload_func" label="Top Menu">
+		<field name="topmenu_color_links" type="color" label="Top Menu links color:" description="Example: #000000" default="#121212"></field>
+		<field name="topmenu_color_links_hover" type="color" label="Top Menu links hover color:" description="Example: #000000" default="#c5896f"></field>
+		<field name="topmenu_color_sub_links" type="color" label="Top Menu sub-links color:" description="Example: #000000" default="#ffffff"></field>
+		<field name="topmenu_color_sub_links_hover" type="color" label="Top Menu sub-links hover color:" description="Example: #000000" default="#c5896f"></field>
+		<field name="topmenu_color_links_active" type="color" label="Top Menu links active color:" description="Example: #000000" default="#ffffff"></field>
+		<field name="topmenu_color_links_active_current" type="color" label="Top Menu links active current color:" description="Example: #d8e3e7" default="#000000"></field>
+		<!--<field name="topmenu_color_links_active_background" type="color" label="Top Menu links active backgroundcolor:" description="Example: #000000" default="#ef4b1d"></field>-->
+	</fieldset>
+	
+	
+		
+	<fieldset name="typography" label="Typography">
+        <field name="body_font" type="list" label="Body Font:" default="PT Sans, sans-serif">
+		    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+		    <option value="Abel, sans-serif">Abel</option>
+			<option value="Montserrat, sans-serif">Montserrat</option>
+			<option value="Arial, sans-serif">Arial</option>
+			<option value="Comfortaa">Comfortaa</option>
+			<option value="Dosis, sans-serif">Dosis</option>
+			<option value="Droid Sans, sans-serif">Droid Sans</option>
+			<option value="Francois One, sans-serif">Francois One</option>
+			<option value="Georgia, serif">Georgia</option>
+			<option value="Helvetica, sans-serif">Helvetica</option>
+			<option value="Lato, sans-serif">Lato</option>
+			<option value="Lobster, sans-serif">Lobster</option>
+			<option value="Lora, sans-serif">Lora</option>
+			<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+			<option value="Open Sans, sans-serif">Open Sans</option>
+			<option value="Oswald, sans-serif">Oswald</option>
+			<option value="Oxygen, sans-serif">Oxygen</option>
+			<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+			<option value="PT Sans,">PT Sans</option>
+			<option value="Prosto One, cursive">Prosto One</option>
+			<option value="Quicksand, sans-serif">Quicksand</option>
+			<option value="Raleway, sans-serif">Raleway</option>
+			<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+			<option value="Roboto, sans-serif">Roboto</option>
+			<option value="Share, cursive">Share</option>
+			<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+			<option value="Times New Roman, sans-serif">Times New Roman</option>
+			<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+			<option value="Ubuntu, sans-serif">Ubuntu</option>
+			<option value="Verdana, sans-serif">Verdana</option>
+		</field>
+
+			<field name="links_font" type="list" label="Body Links Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+
+			<field name="top_menu_font" type="list" label="Top Menu Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+
+			<field name="h1_font" type="list" label="h1 Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+
+			<field name="h2_font" type="list" label="h2 Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+
+			<field name="h3_font" type="list" label="h3 Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+
+			<field name="h4_font" type="list" label="h4 Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+
+			<field name="h5_font" type="list" label="h5 Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+
+			<field name="h6_font" type="list" label="h6 Font:" default="Raleway, sans-serif">
+			    <option value="Arima Madurai, sans-serif">Arima Madurai</option>
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Montserrat, sans-serif">Montserrat</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Georgia, serif">Georgia</option>
+				<option value="Helvetica, sans-serif">Helvetica</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans,">PT Sans</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Raleway, sans-serif">Raleway</option>
+				<option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+				<option value="Roboto, sans-serif">Roboto</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif">Source Sans Pro</option>
+				<option value="Times New Roman, sans-serif">Times New Roman</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif">Ubuntu</option>
+				<option value="Verdana, sans-serif">Verdana</option>
+			</field>
+		</fieldset>
+	
+	<fieldset name="Layouts" type="upload_func" label="Layouts">
+	     <field type="spacer" label="section top " />
+		<field name="top_two_columns_layout" type="list" default="6,6" label="Layout two columns:" description="LAYOUT_TOP_TWO_DESC" override="true">	
+		<option value="2,10">2/10</option>
+		<option value="3,9">3/9</option>	
+		<option value="4,8">4/8</option>
+		<option value="5,7">5/7</option>
+		<option value="6,6">6/6</option>
+		<option value="7,5">7/5</option>
+		<option value="8,4">8/4</option>
+		<option value="9,3">9/3</option>
+		<option value="10,2">10/2</option>
+	    </field>
+		<field name="top_three_columns_layout" type="list" default="4,4,4" label="Layout three columns:" description="LAYOUT_TOP_THREE_DESC" override="true">	
+		<option value="2,2,8">2/2/8</option>
+		<option value="2,3,7">2/3/7</option>
+		<option value="2,4,6">2/4/6</option>
+		<option value="2,5,5">2/5/5</option>
+		<option value="2,6,4">2/6/4</option>
+		<option value="2,7,3">2/7/3</option>
+		<option value="2,8,2">2/8/2</option>
+		<option value="3,2,7">3/2/7</option>
+		<option value="3,3,6">3/3/6</option>
+		<option value="3,4,5">3/4/5</option>
+		<option value="3,5,4">3/5/4</option>
+		<option value="3,6,3">3/6/3</option>
+		<option value="3,7,2">3/7/2</option>
+		<option value="4,2,6">4/2/6</option>
+		<option value="4,3,5">4/3/5</option>
+		<option value="4,4,4">4/4/4</option>
+		<option value="4,5,3">4/5/3</option>
+		<option value="4,6,2">4/6/2</option>
+		<option value="5,2,5">5/2/5</option>
+		<option value="5,3,4">5/3/4</option>
+		<option value="5,4,3">5/4/3</option>
+		<option value="5,5,2">5/5/2</option>
+		<option value="6,2,4">6/2/4</option>
+		<option value="6,3,3">6/3/3</option>
+		<option value="6,4,2">6/4/2</option>
+		<option value="7,2,3">7/2/3</option>
+		<option value="7,3,2">7/3/2</option>
+		<option value="8,2,2">8/2/2</option>
+	    </field>
+		<field name="top_four_columns_layout" type="list" default="3,3,3,3" label="layout four columns:" description="LAYOUT_TOP_FOUR_DESC" override="true">	
+		<option value="2,2,2,6">2/2/2/6</option>
+		<option value="2,2,3,5">2/2/3/5</option>
+		<option value="2,2,4,4">2/2/4/4</option>
+		<option value="2,2,5,3">2/2/5/3</option>
+		<option value="2,2,6,2">2/2/6/2</option>
+		<option value="2,3,2,5">2/3/2/5</option>
+		<option value="2,3,3,4">2/3/3/4</option>
+		<option value="2,3,4,3">2/3/4/3</option>
+		<option value="2,3,5,2">2/3/5/2</option>
+		<option value="2,4,2,4">2/4/2/4</option>
+		<option value="2,4,3,3">2/4/3/3</option>
+		<option value="2,4,4,2">2/4/4/2</option>
+		<option value="2,5,2,3">2/5/2/3</option>
+		<option value="2,5,3,2">2/5/3/2</option>
+		<option value="2,6,2,2">2/6/2/2</option>
+		<option value="3,2,2,5">3/2/2/5</option>
+		<option value="3,2,3,4">3/2/3/4</option>
+		<option value="3,2,5,2">3/2/5/2</option>
+		<option value="3,3,2,4">3/3/2/4</option>
+		<option value="3,3,3,3">3/3/3/3</option>
+		<option value="3,3,4,2">3/3/4/2</option>
+		<option value="3,4,2,3">3/4/2/3</option>
+		<option value="3,4,3,2">3/4/3/2</option>
+		<option value="3,5,2,2">3/5/2/2</option>
+		<option value="4,2,2,4">4/2/2/4</option>
+		<option value="4,2,3,3">4/2/3/3</option>
+		<option value="4,2,4,2">4/2/4/2</option>
+		<option value="4,3,2,3">4/3/2/3</option>
+		<option value="4,3,3,2">4/3/3/2</option>
+		<option value="4,4,2,2">4/4/2/2</option>
+		<option value="5,2,2,3">5/2/2/3</option>
+		<option value="5,2,3,2">5/2/3/2</option>
+		<option value="5,3,2,2">5/2/2/2</option>
+		<option value="6,2,2,2">6/2/2/2</option>
+	    </field>
+	    <field name="top_one_columns_layout" type="list" default="1" label="layout one column:" description="LAYOUT_TOP_FOUR_DESC" override="true">	
+		<option value="1">1 column</option>
+	    </field>
+		
+		<field name="bordersectiontop" type="list" default="1" label="lign separator">
+			<option value="1">enable</option>
+			<option value="0">disable</option>
+		</field>
+		
+		<field name="iconsectiontop" type="list" default="fa fa-th" label="Icon lign seperator" description="Choose icon font awesome">
+		            <option value="fa fa-joomla">fa fa-th</option>
+					<option value="fa fa-joomla">fa fa-joomla</option>
+					<option value="fa fa-cube">fa fa-cube</option>
+					<option value="fa fa-bomb">fa fa-bomb</option>
+					<option value="fa fa-child">fa fa-child</option>
+					<option value="fa fa-envelope-square">fa fa-envelope-square</option>
+					<option value="fa fa-life-ring">fa fa-life-ring</option>
+					<option value="fa fa-life-ring">fa fa-life-ring</option>
+					<option value="fa fa-university">fa fa-university</option>
+					<option value="fa fa-wordpress">fa fa-wordpress</option>
+					<option value="fa fa-building">fa fa-building</option>
+					<option value="fa fa-cubes">fa fa-cubes</option>
+					<option value="fa fa-digg">fa fa-digg</option>
+					<option value="fa fa-life-ring">fa fa-life-ring</option>
+					<option value="fa fa-paper-plane">fa fa-paper-plane</option>
+					<option value="fa fa-taxi">fa fa-taxi</option>
+					<option value="fa fa-yahoo">fa fa-yahoo</option>
+					<option value="fa fa-database">fa fa-database</option>
+					<option value="fa fa-drupal">fa fa-drupal</option>
+					<option value="fa fa-header">fa fa-header</option>
+					<option value="fa fa-jsfiddle">fa fa-jsfiddle</option>
+					<option value="fa fa-pied-piper-alt">fa fa-pied-piper-alt</option>
+					<option value="fa fa-rebel">fa fa-rebel</option>
+					<option value="fa fa-slack">fa fa-slack</option>
+					<option value="fa fa-spoon">fa fa-spoon</option>
+					<option value="fa fa-stumbleupon">fa fa-stumbleupon</option>
+					<option value="fa fa-tencent-weibo">fa fa-tencent-weibo</option>
+					<option value="fa fa-weixin">fa fa-weixin</option>
+					<option value="fa fa-behance-square">fa fa-behance-square</option>
+					<option value="fa fa-car">fa fa-car</option>
+					<option value="fa fa-codepen">fa fa-codepen</option>
+					<option value="fa fa-delicious">fa fa-delicious</option>
+					<option value="fa fa-empire">fa fa-empire</option>
+					<option value="fa fa-google">fa fa-google</option>
+					<option value="fa fa-history">fa fa-history</option>
+					<option value="fa fa-graduation-cap">fa fa-graduation-cap</option>
+					<option value="fa fa-paragraph">fa fa-paragraph</option>
+					<option value="fa fa-pied-piper">fa fa-pied-piper</option>
+					<option value="fa fa-recycle">fa fa-recycle</option>
+					<option value="fa fa-spotify">fa fa-spotify</option>
+					<option value="fa fa-stumbleupon-circle">fa fa-stumbleupon-circle</option>
+					<option value="fa fa-tree">fa fa-tree</option>
+					<option value="fa fa-adjust">fa fa-adjust</option>
+					<option value="fa fa-arrows-h">fa fa-arrows-h</option>
+					<option value="fa fa-ban">fa fa-ban</option>
+					<option value="fa fa-bars">fa fa-bars</option>
+					<option value="fa fa-bolt">fa fa-bolt</option>
+					<option value="fa fa-bookmark-o">fa fa-bookmark-o</option>
+					<option value="fa fa-building-o">fa fa-building-o</option>
+					<option value="fa fa-calendar">fa fa-calendar</option>
+					<option value="fa fa-caret-square-o-up">fa fa-caret-square-o-up</option>
+					<option value="fa fa-check-circle-o">fa fa-check-circle-o</option>
+					<option value="fa fa-circle">fa fa-circle</option>
+					<option value="fa fa-clock-o">fa fa-clock-o</option>
+					<option value="fa fa-code">fa fa-code</option>
+					<option value="fa fa-cogs">fa fa-cogs</option>
+					<option value="fa fa-comments-o">fa fa-comments-o</option>
+					<option value="fa fa-crosshairs">fa fa-crosshairs</option>
+					<option value="fa fa-tachometer">fa fa-tachometer</option>
+					<option value="fa fa-download">fa fa-download</option>
+					<option value="fa fa-envelope">fa fa-envelope</option>
+					<option value="fa fa-exchange">fa fa-exchange</option>
+					<option value="fa fa-external-link">fa fa-external-link</option>
+					<option value="fa fa-fire-extinguisher">fa fa-fire-extinguisher</option>
+					<option value="fa fa-folder-open">fa fa-folder-open</option>
+					<option value="fa fa-gavel">fa fa-gavel</option>
+					<option value="fa fa-glass">fa fa-glass</option>
+					<option value="fa fa-hdd-o">fa fa-hdd-o</option>
+					<option value="fa fa-info">fa fa-info</option>
+					<option value="fa fa-keyboard-o">fa fa-keyboard-o</option>
+					<option value="fa fa-minus">fa fa-minus</option>
+					<option value="fa fa-mobile">fa fa-mobile</option>
+					<option value="fa fa-picture-o">fa fa-picture-o</option>
+					<option value="fa fa-plus-square">fa fa-plus-square</option>
+					<option value="fa fa-puzzle-piece">fa fa-puzzle-piece</option>
+					<option value="fa fa-quote-left">fa fa-quote-left</option>
+					<option value="fa fa-refresh">fa fa-refresh</option>
+					<option value="fa fa-retweet">fa fa-retweet</option>
+					<option value="fa fa-rss-square">fa fa-rss-square</option>
+					<option value="fa fa-shopping-cart">fa fa-shopping-cart</option>
+					<option value="fa fa-sitemap">fa fa-sitemap</option>
+					<option value="fa fa-star-o">fa fa-star-o</option>
+					<option value="fa fa-tasks">fa fa-tasks</option>
+					<option value="fa fa-ticket">fa fa-ticket</option>
+					<option value="fa fa-tint">fa fa-tint</option>
+					<option value="fa fa-truck">fa fa-truck</option>
+					<option value="fa fa-unlock-alt">fa fa-unlock-alt</option>
+					<option value="fa fa-users">fa fa-users</option>
+					<option value="fa fa-volume-up">fa fa-volume-up</option>
+					<option value="fa fa-anchor">fa fa-anchor</option>
+					<option value="fa fa-arrows-v">fa fa-arrows-v</option>
+					<option value="fa fa-beer">fa fa-beer</option>
+					<option value="fa fa-briefcase">fa fa-briefcase</option>
+					<option value="fa fa-bullhorn">fa fa-bullhorn</option>
+					<option value="fa fa-caret-square-o-down">fa fa-caret-square-o-down</option>
+					<option value="fa fa-calendar-o">fa fa-calendar-o</option>
+					<option value="fa fa-certificate">fa fa-certificate</option>
+					<option value="fa fa-cloud">fa fa-cloud</option>
+					<option value="fa fa-code-fork">fa fa-code-fork</option>
+					<option value="fa fa-compass">fa fa-compass</option>
+					<option value="fa fa-exclamation">fa fa-exclamation</option>
+					<option value="fa fa-external-link-square">fa fa-external-link-square</option>
+					<option value="fa fa-female">fa fa-female</option>
+					<option value="fa fa-film">fa fa-film</option>
+					<option value="fa fa-flag">fa fa-flag</option>
+					<option value="fa fa-flask">fa fa-flask</option>
+					<option value="fa fa-globe">fa fa-globe</option>
+					<option value="fa fa-headphones">fa fa-headphones</option>
+					<option value="fa fa-home">fa fa-home</option>
+					<option value="fa fa-info-circle">fa fa-info-circle</option>
+					<option value="fa fa-lemon-o">fa fa-lemon-o</option>
+					<option value="fa fa-lock">fa fa-lock</option>
+					<option value="fa fa-meh-o">fa fa-meh-o</option>
+					<option value="fa fa-minus-circle">fa fa-minus-circle</option>
+					<option value="fa fa-music">fa fa-music</option>
+					<option value="fa fa-paw">fa fa-paw</option>
+					<option value="fa fa-phone">fa fa-phone</option>
+					<option value="fa fa-plane">fa fa-plane</option>
+					<option value="fa fa-plus-square-o">fa fa-plus-square-o</option>
+					<option value="fa fa-qrcode">fa fa-qrcode</option>
+					<option value="fa fa-quote-right">fa fa-quote-right</option>
+					<option value="fa fa-road">fa fa-road</option>
+					<option value="fa fa-search">fa fa-search</option>
+					<option value="fa fa-share-square">fa fa-share-square</option>
+					<option value="fa fa-sign-in">fa fa-sign-in</option>
+					<option value="fa fa-sliders">fa fa-sliders</option>
+					<option value="fa fa-sort-desc">fa fa-sort-desc</option>
+					<option value="fa fa-sort-asc">fa fa-sort-asc</option>
+					<option value="fa fa-suitcase">fa fa-suitcase</option>
+					<option value="fa fa-times">fa fa-times</option>
+					<option value="fa fa-trash-o">fa fa-trash-o</option>
+					<option value="fa fa-umbrella">fa fa-umbrella</option>
+					<option value="fa fa-sort">fa fa-sort</option>
+					<option value="fa fa-video-camera">fa fa-video-camera</option>
+					<option value="fa fa-exclamation-triangle">fa fa-exclamation-triangle</option>
+					<option value="fa fa-archive">fa fa-archive</option>
+					<option value="fa fa-asterisk">fa fa-asterisk</option>
+					<option value="fa fa-bar-chart-o">fa fa-bar-chart-o</option>
+					<option value="fa fa-bell">fa fa-bell</option>
+					<option value="fa fa-book">fa fa-book</option>
+					<option value="fa fa-bug">fa fa-bug</option>
+					<option value="fa fa-bullseye">fa fa-bullseye</option>
+					<option value="fa fa-camera">fa fa-camera</option>
+					<option value="fa fa-caret-square-o-left">fa fa-caret-square-o-left</option>
+					<option value="fa fa-check">fa fa-check</option>
+					<option value="fa fa-check-square-o">fa fa-check-square-o</option>
+					<option value="fa fa-cloud-download">fa fa-cloud-download</option>
+					<option value="fa fa-coffee">fa fa-coffee</option>
+					<option value="fa fa-desktop">fa fa-desktop</option>
+					<option value="fa fa-ellipsis-h">fa fa-ellipsis-h</option>
+					<option value="fa fa-eye">fa fa-eye</option>
+					<option value="fa fa-filter">fa fa-filter</option>
+					<option value="fa fa-flag-checkered">fa fa-flag-checkered</option>
+					<option value="fa fa-folder">fa fa-folder</option>
+					<option value="fa fa-frown-o">fa fa-frown-o</option>
+					<option value="fa fa-heart">fa fa-heart</option>
+					<option value="fa fa-laptop">fa fa-laptop</option>
+					<option value="fa fa-level-down">fa fa-level-down</option>
+					<option value="fa fa-magic">fa fa-magic</option>
+					<option value="fa fa-microphone">fa fa-microphone</option>
+					<option value="fa fa-minus-square">fa fa-minus-square</option>
+					<option value="fa fa-money">fa fa-money</option>
+					<option value="fa fa-pencil">fa fa-pencil</option>
+					<option value="fa fa-phone-square">fa fa-phone-square</option>
+					<option value="fa fa-plus">fa fa-plus</option>
+					<option value="fa fa-power-off">fa fa-power-off</option>
+					<option value="fa fa-question">fa fa-question</option>
+					<option value="fa fa-random">fa fa-random</option>
+					<option value="fa fa-reply">fa fa-reply</option>
+					<option value="fa fa-rocket">fa fa-rocket</option>
+					<option value="fa fa-search-minus">fa fa-search-minus</option>
+					<option value="fa fa-smile-o">fa fa-smile-o</option>
+					<option value="fa fa-share">fa fa-share</option>
+					<option value="fa fa-sort-amount-asc">fa fa-sort-amount-asc</option>
+					<option value="fa fa-sun-o">fa fa-sun-o</option>
+					<option value="fa fa-tag">fa fa-tag</option>
+					<option value="fa fa-thumbs-o-up">fa fa-thumbs-o-up</option>
+					<option value="fa fa-times-circle">fa fa-times-circle</option>
+					<option value="fa fa-wrench">fa fa-wrench</option>
+					<option value="fa fa-user">fa fa-user</option>
+					<option value="fa fa-unlock">fa fa-unlock</option>
+					<option value="fa fa-trophy">fa fa-trophy</option>
+					<option value="fa fa-male">fa fa-male</option>
+					<option value="fa fa-leaf">fa fa-leaf</option>
+					<option value="fa fa-key">fa fa-key</option>
+					<option value="fa fa-heart-o">fa fa-heart-o</option>
+					<option value="fa fa-fire">fa fa-fire</option>
+					<option value="fa fa-gift">fa fa-gift</option>
+					<option value="fa fa-gamepad">fa fa-gamepad</option>
+					<option value="fa fa-cutlery">fa fa-cutlery</option>
+					<option value="fa fa-camera-retro">fa fa-camera-retro</option>
+					<option value="fa fa-arrows">fa fa-arrows</option>
+					<option value="fa fa-magnet">fa fa-magnet</option>
+					<option value="fa fa-list">fa fa-list</option>
+					<option value="fa fa-paperclip">fa fa-paperclip</option>
+					<option value="fa fa-fast-forward">fa fa-fast-forward</option>
+					<option value="fa fa-linkedin">fa fa-linkedin</option>
+					<option value="fa fa-drupal">fa fa-drupal</option>
+					<option value="fa fa-twitter">fa fa-twitter</option>
+					<option value="fa fa-youtube">fa fa-youtube</option>
+					<option value="fa fa-facebook">fa fa-facebook</option>
+					<option value="fa fa-apple">fa fa-apple</option>
+				</field>
+		
+		<field name="top_text_align" type="list" label="text align:">
+			<option value="left">left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+	
+	 <field type="spacer" label="section feature " />
+		<field name="feature_two_columns_layout" type="list" default="6,6" label="Layout two columns:" description="LAYOUT_FEATURE_TWO_DESC" override="true">	
+		<option value="2,10">2/10</option>
+		<option value="3,9">3/9</option>	
+		<option value="4,8">4/8</option>
+		<option value="5,7">5/7</option>
+		<option value="6,6">6/6</option>
+		<option value="7,5">7/5</option>
+		<option value="8,4">8/4</option>
+		<option value="9,3">9/3</option>
+		<option value="10,2">10/2</option>
+	    </field>
+		<field name="feature_three_columns_layout" type="list" default="4,4,4" label="Layout three columns:" description="LAYOUT_FEATURE_THREE_DESC" override="true">	
+		<option value="2,2,8">2/2/8</option>
+		<option value="2,3,7">2/3/7</option>
+		<option value="2,4,6">2/4/6</option>
+		<option value="2,5,5">2/5/5</option>
+		<option value="2,6,4">2/6/4</option>
+		<option value="2,7,3">2/7/3</option>
+		<option value="2,8,2">2/8/2</option>
+		<option value="3,2,7">3/2/7</option>
+		<option value="3,3,6">3/3/6</option>
+		<option value="3,4,5">3/4/5</option>
+		<option value="3,5,4">3/5/4</option>
+		<option value="3,6,3">3/6/3</option>
+		<option value="3,7,2">3/7/2</option>
+		<option value="4,2,6">4/2/6</option>
+		<option value="4,3,5">4/3/5</option>
+		<option value="4,4,4">4/4/4</option>
+		<option value="4,5,3">4/5/3</option>
+		<option value="4,6,2">4/6/2</option>
+		<option value="5,2,5">5/2/5</option>
+		<option value="5,3,4">5/3/4</option>
+		<option value="5,4,3">5/4/3</option>
+		<option value="5,5,2">5/5/2</option>
+		<option value="6,2,4">6/2/4</option>
+		<option value="6,3,3">6/3/3</option>
+		<option value="6,4,2">6/4/2</option>
+		<option value="7,2,3">7/2/3</option>
+		<option value="7,3,2">7/3/2</option>
+		<option value="8,2,2">8/2/2</option>
+	    </field>
+		<field name="feature_four_columns_layout" type="list" default="3,3,3,3" label="layout four columns:" description="LAYOUT_FEATURE_FOUR_DESC" override="true">	
+		<option value="2,2,2,6">2/2/2/6</option>
+		<option value="2,2,3,5">2/2/3/5</option>
+		<option value="2,2,4,4">2/2/4/4</option>
+		<option value="2,2,5,3">2/2/5/3</option>
+		<option value="2,2,6,2">2/2/6/2</option>
+		<option value="2,3,2,5">2/3/2/5</option>
+		<option value="2,3,3,4">2/3/3/4</option>
+		<option value="2,3,4,3">2/3/4/3</option>
+		<option value="2,3,5,2">2/3/5/2</option>
+		<option value="2,4,2,4">2/4/2/4</option>
+		<option value="2,4,3,3">2/4/3/3</option>
+		<option value="2,4,4,2">2/4/4/2</option>
+		<option value="2,5,2,3">2/5/2/3</option>
+		<option value="2,5,3,2">2/5/3/2</option>
+		<option value="2,6,2,2">2/6/2/2</option>
+		<option value="3,2,2,5">3/2/2/5</option>
+		<option value="3,2,3,4">3/2/3/4</option>
+		<option value="3,2,5,2">3/2/5/2</option>
+		<option value="3,3,2,4">3/3/2/4</option>
+		<option value="3,3,3,3">3/3/3/3</option>
+		<option value="3,3,4,2">3/3/4/2</option>
+		<option value="3,4,2,3">3/4/2/3</option>
+		<option value="3,4,3,2">3/4/3/2</option>
+		<option value="3,5,2,2">3/5/2/2</option>
+		<option value="4,2,2,4">4/2/2/4</option>
+		<option value="4,2,3,3">4/2/3/3</option>
+		<option value="4,2,4,2">4/2/4/2</option>
+		<option value="4,3,2,3">4/3/2/3</option>
+		<option value="4,3,3,2">4/3/3/2</option>
+		<option value="4,4,2,2">4/4/2/2</option>
+		<option value="5,2,2,3">5/2/2/3</option>
+		<option value="5,2,3,2">5/2/3/2</option>
+		<option value="5,3,2,2">5/2/2/2</option>
+		<option value="6,2,2,2">6/2/2/2</option>
+	    </field>
+	    <field name="feature_one_columns_layout" type="list" default="1" label="layout one column:" description="LAYOUT_FEATURE_FOUR_DESC" override="true">	
+		<option value="1">1 column</option>
+	    </field>
+		<field name="feature_text_align" type="list" label="text align:">
+			<option value="left">left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+	
+	<field type="spacer" label="section before content " />	
+		<field name="before_content_two_columns_layout" type="list" default="6,6" label="Layout two columns:" description="LAYOUT_FEATURE_TWO_DESC" override="true">	
+		<option value="2,10">2/10</option>
+		<option value="3,9">3/9</option>	
+		<option value="4,8">4/8</option>
+		<option value="5,7">5/7</option>
+		<option value="6,6">6/6</option>
+		<option value="7,5">7/5</option>
+		<option value="8,4">8/4</option>
+		<option value="9,3">9/3</option>
+		<option value="10,2">10/2</option>
+	    </field>
+		<field name="before_content_three_columns_layout" type="list" default="4,4,4" label="Layout three columns:" description="LAYOUT_FEATURE_THREE_DESC" override="true">	
+		<option value="2,2,8">2/2/8</option>
+		<option value="2,3,7">2/3/7</option>
+		<option value="2,4,6">2/4/6</option>
+		<option value="2,5,5">2/5/5</option>
+		<option value="2,6,4">2/6/4</option>
+		<option value="2,7,3">2/7/3</option>
+		<option value="2,8,2">2/8/2</option>
+		<option value="3,2,7">3/2/7</option>
+		<option value="3,3,6">3/3/6</option>
+		<option value="3,4,5">3/4/5</option>
+		<option value="3,5,4">3/5/4</option>
+		<option value="3,6,3">3/6/3</option>
+		<option value="3,7,2">3/7/2</option>
+		<option value="4,2,6">4/2/6</option>
+		<option value="4,3,5">4/3/5</option>
+		<option value="4,4,4">4/4/4</option>
+		<option value="4,5,3">4/5/3</option>
+		<option value="4,6,2">4/6/2</option>
+		<option value="5,2,5">5/2/5</option>
+		<option value="5,3,4">5/3/4</option>
+		<option value="5,4,3">5/4/3</option>
+		<option value="5,5,2">5/5/2</option>
+		<option value="6,2,4">6/2/4</option>
+		<option value="6,3,3">6/3/3</option>
+		<option value="6,4,2">6/4/2</option>
+		<option value="7,2,3">7/2/3</option>
+		<option value="7,3,2">7/3/2</option>
+		<option value="8,2,2">8/2/2</option>
+	    </field>
+		<field name="before_content_four_columns_layout" type="list" default="3,3,3,3" label="layout four columns:" description="LAYOUT_FEATURE_FOUR_DESC" override="true">	
+		<option value="2,2,2,6">2/2/2/6</option>
+		<option value="2,2,3,5">2/2/3/5</option>
+		<option value="2,2,4,4">2/2/4/4</option>
+		<option value="2,2,5,3">2/2/5/3</option>
+		<option value="2,2,6,2">2/2/6/2</option>
+		<option value="2,3,2,5">2/3/2/5</option>
+		<option value="2,3,3,4">2/3/3/4</option>
+		<option value="2,3,4,3">2/3/4/3</option>
+		<option value="2,3,5,2">2/3/5/2</option>
+		<option value="2,4,2,4">2/4/2/4</option>
+		<option value="2,4,3,3">2/4/3/3</option>
+		<option value="2,4,4,2">2/4/4/2</option>
+		<option value="2,5,2,3">2/5/2/3</option>
+		<option value="2,5,3,2">2/5/3/2</option>
+		<option value="2,6,2,2">2/6/2/2</option>
+		<option value="3,2,2,5">3/2/2/5</option>
+		<option value="3,2,3,4">3/2/3/4</option>
+		<option value="3,2,5,2">3/2/5/2</option>
+		<option value="3,3,2,4">3/3/2/4</option>
+		<option value="3,3,3,3">3/3/3/3</option>
+		<option value="3,3,4,2">3/3/4/2</option>
+		<option value="3,4,2,3">3/4/2/3</option>
+		<option value="3,4,3,2">3/4/3/2</option>
+		<option value="3,5,2,2">3/5/2/2</option>
+		<option value="4,2,2,4">4/2/2/4</option>
+		<option value="4,2,3,3">4/2/3/3</option>
+		<option value="4,2,4,2">4/2/4/2</option>
+		<option value="4,3,2,3">4/3/2/3</option>
+		<option value="4,3,3,2">4/3/3/2</option>
+		<option value="4,4,2,2">4/4/2/2</option>
+		<option value="5,2,2,3">5/2/2/3</option>
+		<option value="5,2,3,2">5/2/3/2</option>
+		<option value="5,3,2,2">5/2/2/2</option>
+		<option value="6,2,2,2">6/2/2/2</option>
+	    </field>
+	    <field name="before_content_one_columns_layout" type="list" default="1" label="layout one column:" description="LAYOUT_FEATURE_FOUR_DESC" override="true">	
+		<option value="1">1 column</option>
+	    </field>
+		 <field name="before_content_text_align" type="list" default="left" label="text align:">
+			<option value="left">left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+		
+		<field type="spacer" label="section after content " />	
+		<field name="after_content_two_columns_layout" type="list" default="6,6" label="Layout two columns:" description="LAYOUT_AFTER_TWO_DESC" override="true">	
+		<option value="2,10">2/10</option>
+		<option value="3,9">3/9</option>	
+		<option value="4,8">4/8</option>
+		<option value="5,7">5/7</option>
+		<option value="6,6">6/6</option>
+		<option value="7,5">7/5</option>
+		<option value="8,4">8/4</option>
+		<option value="9,3">9/3</option>
+		<option value="10,2">10/2</option>
+	    </field>
+		<field name="after_content_three_columns_layout" type="list" default="4,4,4" label="Layout three columns:" description="LAYOUT_AFTER_THREE_DESC" override="true">	
+		<option value="2,2,8">2/2/8</option>
+		<option value="2,3,7">2/3/7</option>
+		<option value="2,4,6">2/4/6</option>
+		<option value="2,5,5">2/5/5</option>
+		<option value="2,6,4">2/6/4</option>
+		<option value="2,7,3">2/7/3</option>
+		<option value="2,8,2">2/8/2</option>
+		<option value="3,2,7">3/2/7</option>
+		<option value="3,3,6">3/3/6</option>
+		<option value="3,4,5">3/4/5</option>
+		<option value="3,5,4">3/5/4</option>
+		<option value="3,6,3">3/6/3</option>
+		<option value="3,7,2">3/7/2</option>
+		<option value="4,2,6">4/2/6</option>
+		<option value="4,3,5">4/3/5</option>
+		<option value="4,4,4">4/4/4</option>
+		<option value="4,5,3">4/5/3</option>
+		<option value="4,6,2">4/6/2</option>
+		<option value="5,2,5">5/2/5</option>
+		<option value="5,3,4">5/3/4</option>
+		<option value="5,4,3">5/4/3</option>
+		<option value="5,5,2">5/5/2</option>
+		<option value="6,2,4">6/2/4</option>
+		<option value="6,3,3">6/3/3</option>
+		<option value="6,4,2">6/4/2</option>
+		<option value="7,2,3">7/2/3</option>
+		<option value="7,3,2">7/3/2</option>
+		<option value="8,2,2">8/2/2</option>
+	    </field>
+		<field name="after_content_four_columns_layout" type="list" default="3,3,3,3" label="layout four columns:" description="LAYOUT_AFTER_FOUR_DESC" override="true">	
+		<option value="2,2,2,6">2/2/2/6</option>
+		<option value="2,2,3,5">2/2/3/5</option>
+		<option value="2,2,4,4">2/2/4/4</option>
+		<option value="2,2,5,3">2/2/5/3</option>
+		<option value="2,2,6,2">2/2/6/2</option>
+		<option value="2,3,2,5">2/3/2/5</option>
+		<option value="2,3,3,4">2/3/3/4</option>
+		<option value="2,3,4,3">2/3/4/3</option>
+		<option value="2,3,5,2">2/3/5/2</option>
+		<option value="2,4,2,4">2/4/2/4</option>
+		<option value="2,4,3,3">2/4/3/3</option>
+		<option value="2,4,4,2">2/4/4/2</option>
+		<option value="2,5,2,3">2/5/2/3</option>
+		<option value="2,5,3,2">2/5/3/2</option>
+		<option value="2,6,2,2">2/6/2/2</option>
+		<option value="3,2,2,5">3/2/2/5</option>
+		<option value="3,2,3,4">3/2/3/4</option>
+		<option value="3,2,5,2">3/2/5/2</option>
+		<option value="3,3,2,4">3/3/2/4</option>
+		<option value="3,3,3,3">3/3/3/3</option>
+		<option value="3,3,4,2">3/3/4/2</option>
+		<option value="3,4,2,3">3/4/2/3</option>
+		<option value="3,4,3,2">3/4/3/2</option>
+		<option value="3,5,2,2">3/5/2/2</option>
+		<option value="4,2,2,4">4/2/2/4</option>
+		<option value="4,2,3,3">4/2/3/3</option>
+		<option value="4,2,4,2">4/2/4/2</option>
+		<option value="4,3,2,3">4/3/2/3</option>
+		<option value="4,3,3,2">4/3/3/2</option>
+		<option value="4,4,2,2">4/4/2/2</option>
+		<option value="5,2,2,3">5/2/2/3</option>
+		<option value="5,2,3,2">5/2/3/2</option>
+		<option value="5,3,2,2">5/2/2/2</option>
+		<option value="6,2,2,2">6/2/2/2</option>
+	    </field>
+	    <field name="after_content_one_columns_layout" type="list" default="1" label="layout one column:" description="LAYOUT_AFTER_FOUR_DESC" override="true">	
+		<option value="1">1 column</option>
+	    </field>
+		 <field name="after_content_text_align" type="list" default="left" label="text align:">
+			<option value="left">left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+		
+		<field type="spacer" label="section bottom content " />	
+		<field name="bottom_content_two_columns_layout" type="list" default="6,6" label="Layout two columns:" description="LAYOUT_BOTTOM_TWO_DESC" override="true">	
+		<option value="2,10">2/10</option>
+		<option value="3,9">3/9</option>	
+		<option value="4,8">4/8</option>
+		<option value="5,7">5/7</option>
+		<option value="6,6">6/6</option>
+		<option value="7,5">7/5</option>
+		<option value="8,4">8/4</option>
+		<option value="9,3">9/3</option>
+		<option value="10,2">10/2</option>
+	    </field>
+		<field name="bottom_content_three_columns_layout" type="list" default="4,4,4" label="Layout three columns:" description="LAYOUT_BOTTOM_THREE_DESC" override="true">	
+		<option value="2,2,8">2/2/8</option>
+		<option value="2,3,7">2/3/7</option>
+		<option value="2,4,6">2/4/6</option>
+		<option value="2,5,5">2/5/5</option>
+		<option value="2,6,4">2/6/4</option>
+		<option value="2,7,3">2/7/3</option>
+		<option value="2,8,2">2/8/2</option>
+		<option value="3,2,7">3/2/7</option>
+		<option value="3,3,6">3/3/6</option>
+		<option value="3,4,5">3/4/5</option>
+		<option value="3,5,4">3/5/4</option>
+		<option value="3,6,3">3/6/3</option>
+		<option value="3,7,2">3/7/2</option>
+		<option value="4,2,6">4/2/6</option>
+		<option value="4,3,5">4/3/5</option>
+		<option value="4,4,4">4/4/4</option>
+		<option value="4,5,3">4/5/3</option>
+		<option value="4,6,2">4/6/2</option>
+		<option value="5,2,5">5/2/5</option>
+		<option value="5,3,4">5/3/4</option>
+		<option value="5,4,3">5/4/3</option>
+		<option value="5,5,2">5/5/2</option>
+		<option value="6,2,4">6/2/4</option>
+		<option value="6,3,3">6/3/3</option>
+		<option value="6,4,2">6/4/2</option>
+		<option value="7,2,3">7/2/3</option>
+		<option value="7,3,2">7/3/2</option>
+		<option value="8,2,2">8/2/2</option>
+	    </field>
+		<field name="bottom_content_four_columns_layout" type="list" default="3,3,3,3" label="layout four columns:" description="LAYOUT_BOTTOM_FOUR_DESC" override="true">	
+		<option value="2,2,2,6">2/2/2/6</option>
+		<option value="2,2,3,5">2/2/3/5</option>
+		<option value="2,2,4,4">2/2/4/4</option>
+		<option value="2,2,5,3">2/2/5/3</option>
+		<option value="2,2,6,2">2/2/6/2</option>
+		<option value="2,3,2,5">2/3/2/5</option>
+		<option value="2,3,3,4">2/3/3/4</option>
+		<option value="2,3,4,3">2/3/4/3</option>
+		<option value="2,3,5,2">2/3/5/2</option>
+		<option value="2,4,2,4">2/4/2/4</option>
+		<option value="2,4,3,3">2/4/3/3</option>
+		<option value="2,4,4,2">2/4/4/2</option>
+		<option value="2,5,2,3">2/5/2/3</option>
+		<option value="2,5,3,2">2/5/3/2</option>
+		<option value="2,6,2,2">2/6/2/2</option>
+		<option value="3,2,2,5">3/2/2/5</option>
+		<option value="3,2,3,4">3/2/3/4</option>
+		<option value="3,2,5,2">3/2/5/2</option>
+		<option value="3,3,2,4">3/3/2/4</option>
+		<option value="3,3,3,3">3/3/3/3</option>
+		<option value="3,3,4,2">3/3/4/2</option>
+		<option value="3,4,2,3">3/4/2/3</option>
+		<option value="3,4,3,2">3/4/3/2</option>
+		<option value="3,5,2,2">3/5/2/2</option>
+		<option value="4,2,2,4">4/2/2/4</option>
+		<option value="4,2,3,3">4/2/3/3</option>
+		<option value="4,2,4,2">4/2/4/2</option>
+		<option value="4,3,2,3">4/3/2/3</option>
+		<option value="4,3,3,2">4/3/3/2</option>
+		<option value="4,4,2,2">4/4/2/2</option>
+		<option value="5,2,2,3">5/2/2/3</option>
+		<option value="5,2,3,2">5/2/3/2</option>
+		<option value="5,3,2,2">5/2/2/2</option>
+		<option value="6,2,2,2">6/2/2/2</option>
+	    </field>
+	    <field name="bottom_content_one_columns_layout" type="list" default="1" label="layout one column:" description="LAYOUT_BOTTOM_FOUR_DESC" override="true">	
+		<option value="1">1 column</option>
+	    </field>
+		 <field name="bottom_content_text_align" type="list" default="left" label="text align:">
+			<option value="left">left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+		
+		
+		 <field type="spacer" label="section footertop " />
+		<field name="footertop_two_columns_layout" type="list" default="6,6" label="Layout two columns:" description="LAYOUT_FOOTERTOP_TWO_DESC" override="true">	
+		<option value="2,10">2/10</option>
+		<option value="3,9">3/9</option>	
+		<option value="4,8">4/8</option>
+		<option value="5,7">5/7</option>
+		<option value="6,6">6/6</option>
+		<option value="7,5">7/5</option>
+		<option value="8,4">8/4</option>
+		<option value="9,3">9/3</option>
+		<option value="10,2">10/2</option>
+	    </field>
+		<field name="footertop_three_columns_layout" type="list" default="4,4,4" label="Layout three columns:" description="LAYOUT_FOOTERTOP_THREE_DESC" override="true">	
+		<option value="2,2,8">2/2/8</option>
+		<option value="2,3,7">2/3/7</option>
+		<option value="2,4,6">2/4/6</option>
+		<option value="2,5,5">2/5/5</option>
+		<option value="2,6,4">2/6/4</option>
+		<option value="2,7,3">2/7/3</option>
+		<option value="2,8,2">2/8/2</option>
+		<option value="3,2,7">3/2/7</option>
+		<option value="3,3,6">3/3/6</option>
+		<option value="3,4,5">3/4/5</option>
+		<option value="3,5,4">3/5/4</option>
+		<option value="3,6,3">3/6/3</option>
+		<option value="3,7,2">3/7/2</option>
+		<option value="4,2,6">4/2/6</option>
+		<option value="4,3,5">4/3/5</option>
+		<option value="4,4,4">4/4/4</option>
+		<option value="4,5,3">4/5/3</option>
+		<option value="4,6,2">4/6/2</option>
+		<option value="5,2,5">5/2/5</option>
+		<option value="5,3,4">5/3/4</option>
+		<option value="5,4,3">5/4/3</option>
+		<option value="5,5,2">5/5/2</option>
+		<option value="6,2,4">6/2/4</option>
+		<option value="6,3,3">6/3/3</option>
+		<option value="6,4,2">6/4/2</option>
+		<option value="7,2,3">7/2/3</option>
+		<option value="7,3,2">7/3/2</option>
+		<option value="8,2,2">8/2/2</option>
+	    </field>
+		<field name="footertop_four_columns_layout" type="list" default="3,3,3,3" label="layout four columns:" description="LAYOUT_FOOTERTOP_FOUR_DESC" override="true">	
+		<option value="2,2,2,6">2/2/2/6</option>
+		<option value="2,2,3,5">2/2/3/5</option>
+		<option value="2,2,4,4">2/2/4/4</option>
+		<option value="2,2,5,3">2/2/5/3</option>
+		<option value="2,2,6,2">2/2/6/2</option>
+		<option value="2,3,2,5">2/3/2/5</option>
+		<option value="2,3,3,4">2/3/3/4</option>
+		<option value="2,3,4,3">2/3/4/3</option>
+		<option value="2,3,5,2">2/3/5/2</option>
+		<option value="2,4,2,4">2/4/2/4</option>
+		<option value="2,4,3,3">2/4/3/3</option>
+		<option value="2,4,4,2">2/4/4/2</option>
+		<option value="2,5,2,3">2/5/2/3</option>
+		<option value="2,5,3,2">2/5/3/2</option>
+		<option value="2,6,2,2">2/6/2/2</option>
+		<option value="3,2,2,5">3/2/2/5</option>
+		<option value="3,2,3,4">3/2/3/4</option>
+		<option value="3,2,5,2">3/2/5/2</option>
+		<option value="3,3,2,4">3/3/2/4</option>
+		<option value="3,3,3,3">3/3/3/3</option>
+		<option value="3,3,4,2">3/3/4/2</option>
+		<option value="3,4,2,3">3/4/2/3</option>
+		<option value="3,4,3,2">3/4/3/2</option>
+		<option value="3,5,2,2">3/5/2/2</option>
+		<option value="4,2,2,4">4/2/2/4</option>
+		<option value="4,2,3,3">4/2/3/3</option>
+		<option value="4,2,4,2">4/2/4/2</option>
+		<option value="4,3,2,3">4/3/2/3</option>
+		<option value="4,3,3,2">4/3/3/2</option>
+		<option value="4,4,2,2">4/4/2/2</option>
+		<option value="5,2,2,3">5/2/2/3</option>
+		<option value="5,2,3,2">5/2/3/2</option>
+		<option value="5,3,2,2">5/2/2/2</option>
+		<option value="6,2,2,2">6/2/2/2</option>
+	    </field>
+	    <field name="footertop_one_columns_layout" type="list" default="1" label="layout one column:" description="LAYOUT_FOOTERTOP_FOUR_DESC" override="true">	
+		<option value="1">1 column</option>
+	    </field>
+		<field name="footertop_text_align" type="list" label="text align:">
+			<option value="left">left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+		
+		<field type="spacer" label="section footerbottom " />
+		<field name="footerbottom_two_columns_layout" type="list" default="6,6" label="Layout two columns:" description="LAYOUT_FOOTERBOTTOM_TWO_DESC" override="true">	
+		<option value="2,10">2/10</option>
+		<option value="3,9">3/9</option>	
+		<option value="4,8">4/8</option>
+		<option value="5,7">5/7</option>
+		<option value="6,6">6/6</option>
+		<option value="7,5">7/5</option>
+		<option value="8,4">8/4</option>
+		<option value="9,3">9/3</option>
+		<option value="10,2">10/2</option>
+	    </field>
+		<field name="footerbottom_three_columns_layout" type="list" default="4,4,4" label="Layout three columns:" description="LAYOUT_FOOTERBOTTOM_THREE_DESC" override="true">	
+		<option value="2,2,8">2/2/8</option>
+		<option value="2,3,7">2/3/7</option>
+		<option value="2,4,6">2/4/6</option>
+		<option value="2,5,5">2/5/5</option>
+		<option value="2,6,4">2/6/4</option>
+		<option value="2,7,3">2/7/3</option>
+		<option value="2,8,2">2/8/2</option>
+		<option value="3,2,7">3/2/7</option>
+		<option value="3,3,6">3/3/6</option>
+		<option value="3,4,5">3/4/5</option>
+		<option value="3,5,4">3/5/4</option>
+		<option value="3,6,3">3/6/3</option>
+		<option value="3,7,2">3/7/2</option>
+		<option value="4,2,6">4/2/6</option>
+		<option value="4,3,5">4/3/5</option>
+		<option value="4,4,4">4/4/4</option>
+		<option value="4,5,3">4/5/3</option>
+		<option value="4,6,2">4/6/2</option>
+		<option value="5,2,5">5/2/5</option>
+		<option value="5,3,4">5/3/4</option>
+		<option value="5,4,3">5/4/3</option>
+		<option value="5,5,2">5/5/2</option>
+		<option value="6,2,4">6/2/4</option>
+		<option value="6,3,3">6/3/3</option>
+		<option value="6,4,2">6/4/2</option>
+		<option value="7,2,3">7/2/3</option>
+		<option value="7,3,2">7/3/2</option>
+		<option value="8,2,2">8/2/2</option>
+	    </field>
+		<field name="footerbottom_four_columns_layout" type="list" default="3,3,3,3" label="layout four columns:" description="LAYOUT_FOOTERBOTTOM_FOUR_DESC" override="true">	
+		<option value="2,2,2,6">2/2/2/6</option>
+		<option value="2,2,3,5">2/2/3/5</option>
+		<option value="2,2,4,4">2/2/4/4</option>
+		<option value="2,2,5,3">2/2/5/3</option>
+		<option value="2,2,6,2">2/2/6/2</option>
+		<option value="2,3,2,5">2/3/2/5</option>
+		<option value="2,3,3,4">2/3/3/4</option>
+		<option value="2,3,4,3">2/3/4/3</option>
+		<option value="2,3,5,2">2/3/5/2</option>
+		<option value="2,4,2,4">2/4/2/4</option>
+		<option value="2,4,3,3">2/4/3/3</option>
+		<option value="2,4,4,2">2/4/4/2</option>
+		<option value="2,5,2,3">2/5/2/3</option>
+		<option value="2,5,3,2">2/5/3/2</option>
+		<option value="2,6,2,2">2/6/2/2</option>
+		<option value="3,2,2,5">3/2/2/5</option>
+		<option value="3,2,3,4">3/2/3/4</option>
+		<option value="3,2,5,2">3/2/5/2</option>
+		<option value="3,3,2,4">3/3/2/4</option>
+		<option value="3,3,3,3">3/3/3/3</option>
+		<option value="3,3,4,2">3/3/4/2</option>
+		<option value="3,4,2,3">3/4/2/3</option>
+		<option value="3,4,3,2">3/4/3/2</option>
+		<option value="3,5,2,2">3/5/2/2</option>
+		<option value="4,2,2,4">4/2/2/4</option>
+		<option value="4,2,3,3">4/2/3/3</option>
+		<option value="4,2,4,2">4/2/4/2</option>
+		<option value="4,3,2,3">4/3/2/3</option>
+		<option value="4,3,3,2">4/3/3/2</option>
+		<option value="4,4,2,2">4/4/2/2</option>
+		<option value="5,2,2,3">5/2/2/3</option>
+		<option value="5,2,3,2">5/2/3/2</option>
+		<option value="5,3,2,2">5/2/2/2</option>
+		<option value="6,2,2,2">6/2/2/2</option>
+	    </field>
+	    <field name="footerbottom_one_columns_layout" type="list" default="1" label="layout one column:" description="LAYOUT_FOOTERBOTTOM_FOUR_DESC" override="true">	
+		<option value="1">1 column</option>
+	    </field>
+		<field name="footerbottom_text_align" type="list" label="text align:">
+			<option value="left">left</option>
+			<option value="center">center</option>
+			<option value="right">right</option>
+		</field>
+		</fieldset>
+		
+		<fieldset name="social_icons" label="Social links">
+			<field name="twitter" type="text" label="Twitter" description="Insert URL here." default=""></field>
+			<field name="facebook" type="text" label="Facebook" description="Insert URL here." default=""></field>
+			<field name="flickr" type="text" label="Flickr" description="Insert URL here." default=""></field>
+			<field name="linkedin" type="text" label="Linked in" description="Insert URL here." default=""></field>
+			<field name="youtube" type="text" label="YouTube" description="Insert URL here." default=""></field>
+			<field name="pinterest" type="text" label="Pinterest" description="Insert URL here." default=""></field>
+			<field name="google" type="text" label="Google+" description="Insert URL here." default=""></field>
+			<field name="dribbble" type="text" label="Dribbble" description="Insert URL here." default=""></field>
+			<field name="vimeo" type="text" label="Vimeo" description="Insert URL here." default=""></field>
+			<field name="instagram" type="text" label="Instagram" description="Insert URL here." default=""></field>
+			<field name="vk" type="text" label="Vk" description="Insert URL here." default=""></field>
+		</fieldset>
+
+		<fieldset name="tracking_code" label="Tracking Google Code">
+			<field name="tracking_code" type="textarea" label="Tracking Google Code:" description="Enter your Tracking Google Code in JavaScript tags"></field>
+		</fieldset>
+	</fields>
+
+</config>
+</extension>

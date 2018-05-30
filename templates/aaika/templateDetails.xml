@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+  <name>aaika</name>
+  <version>1.0</version>
+  <creationDate>June 2015</creationDate>
+  <author>Joomlastars</author>
+  <authorEmail>stars.joomla@gmail.org</authorEmail>
+  <copyright>Copyright (C) 2015 Joomlastars. All rights reserved.</copyright>
+  <description>
+    <![CDATA[<link href="../templates/aaika/css/admin.css" rel="stylesheet" type="text/css" media="all" /> 
+      <div class="templateinfo"><h3><strong>Aaika joomla theme description</strong></h3>
+      <img src="../templates/aaika/images/templates.png" border="0" title="" alt=""/>
+      <p>Template Links</p> 
+      <p>Template Setup Guide <a href="http://aaika.joomlastars.co/Documentation/index.html" target="_blank">Read Now</a><br />  
+      Follow us on Twitter <a href="http://twitter.com/joomlastars" target="_blank">Joomlastars Twitter</a><br />
+      Follow us on Facebook <a href="http://www.facebook.com/joomlastars" target="_blank">Joomlastars Facebook</a><br>
+      Follow us on Skype <a href="#">stars.joomla</a><br>
+	  Send us mail @ <a href="mailto:stars.joomla@gmail.com">stars.joomla@gmail.com</a>
+      <br /></p></div>]]>
+  </description>
+  <languages folder="language">
+    <language tag="ar-AA">ar-AA/ar-AA.tpl_aaika.ini</language>
+    <language tag="de-DE">de-DE/de-DE.tpl_aaika.ini</language>
+    <language tag="en-GB">en-GB/en-GB.tpl_aaika.ini</language>
+    <language tag="es-ES">es-ES/es-ES.tpl_aaika.ini</language>
+    <language tag="fr-FR">fr-FR/fr-FR.tpl_aaika.ini</language>
+    <language tag="gr-GR">gr-GR/gr-GR.tpl_aaika.ini</language>
+    <language tag="it-IT">it-IT/it-IT.tpl_aaika.ini</language>
+    <language tag="ja-JP">ja-JP/ja-JP.tpl_aaika.ini</language>
+    <language tag="nb-NO">nb-NO/nb-NO.tpl_aaika.ini</language>
+    <language tag="nl-NL">nl-NL/nl-NL.tpl_aaika.ini</language>
+    <language tag="pt-PT">pt-PT/pt-PT.tpl_aaika.ini</language>
+    <language tag="ru-RU">ru-RU/ru-RU.tpl_aaika.ini</language>
+    <language tag="sv-SE">sv-SE/sv-SE.tpl_aaika.ini</language>
+    <language tag="zh-CN">zh-CN/zh-CN.tpl_aaika.ini</language>
+  </languages>
+  <files>
+    <folder>css</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+	<folder>opcss</folder>
+	<folder>opimages</folder>
+	<folder>opjs</folder>
+    <folder>preset</folder>
+	<filename>error.php</filename>
+	<filename>favicon.ico</filename>
+    <filename>index.php</filename>
+    <filename>index.html</filename>
+    <filename>templateDetails.xml</filename>
+    <filename>template_preview.png</filename>
+    <filename>template_thumbnail.png</filename>
+  </files>
+  <positions>
+    <position>js-pagetop</position>
+    <position>js-contactdetail</position>
+    <position>js-headermenu</position>
+    <position>js-sociallinks</position>
+    <position>js-menu</position>
+    <position>js-search</position>
+    <position>js-featuresmegamenu</position>
+    <position>js-shortcodesmegamenu</position>
+    <position>js-slideshow1</position>
+    <position>js-slideshow2</position>
+    <position>js-slideshow3</position>
+    <position>js-slideshow4</position>
+    <position>js-slideshow5</position>
+    <position>js-slideshow6</position>
+    <position>js-slideshow7</position>
+    <position>js-slideshow8</position>
+    <position>js-slideshow9</position>
+    <position>js-slideshow10</position>
+    <position>js-slideshownew</position>
+    <position>js-contact1</position>
+    <position>js-contact2</position>
+    <position>js-pagetitle</position>
+    <position>js-breadcrumbs</position>
+    <position>js-left</position>
+    <position>js-right</position>
+    <position>js-recentposts</position>
+    <position>js-popularposts</position>
+    <position>js-recent</position>
+    <position>js-popular</position>
+    <position>js-portmasonry</position>
+    <position>js-portcolumns2</position>
+    <position>js-portcolumns3</position>
+    <position>js-portcolumns4</position>
+    <position>js-portsidebar</position>
+    <position>js-portfullwidth</position>
+    <position>js-portimagegallery</position>
+    
+    <!-- Home 1 Custom Html -->
+    <position>js-features1</position>
+    <position>js-features2</position>
+    <position>js-features3</position>
+    <position>js-features4</position>
+    <position>js-features5</position>
+    <position>js-features6</position>
+    <position>js-features7</position>
+    <position>js-features8</position>
+    <position>js-features9</position>
+    <position>js-features10</position>
+    <position>js-features11</position>
+    <position>js-features12</position>
+    <position>js-features13</position>
+    <position>js-features14</position>
+    <position>js-features30</position>
+    <position>js-features31</position>
+    <position>js-features32</position>
+    <position>js-features33</position>
+    <position>js-features37</position>
+    <position>js-features38</position>
+    <position>js-features49</position>
+    <position>js-features53</position>
+    <position>js-features54</position>
+    <position>js-features55</position>
+    <position>js-features56</position>
+    <position>js-features57</position>
+    <position>js-features58</position>
+    <position>js-features59</position>
+    <position>js-features60</position>
+    <position>js-features61</position>
+    <position>js-parallax1</position>
+    <position>js-parallax2</position>
+    <position>js-parallax4</position>
+    <position>js-parallax7</position>
+    <position>js-parallax8</position>
+    <position>js-parallax9</position>
+    <position>js-recentworks</position>
+    <position>js-pricing</position>
+    <position>js-whatwedo</position>
+    <position>js-meetourteam</position>
+    <position>js-aboutstyle1</position>
+    <position>js-aboutstyle4</position>
+    <position>js-aboutstyle5</position>
+    <position>js-servicesstyle1</position>
+    <position>js-servicesstyle2</position>
+    <position>js-servicesstyle3</position>
+    <position>js-servicesstyle4</position>
+    <position>js-servicesstyle5</position>
+    <position>js-teamstyle1</position>
+    <position>js-videobackground</position>
+    <position>js-flipclientinfo</position>
+    <position>js-footertop</position>
+    <position>js-footerbottom</position>
+    <position>js-footer2links</position>
+    <position>js-footer2blog</position>
+    <position>js-footer2tag</position>
+    <position>js-footer2about</position>
+    <position>js-footer2tweet</position>
+    <position>js-footer2address</position>
+    <position>js-footer2contact</position>
+    <position>js-copyrightinfo</position>
+    <position>js-contactmap1</position>
+    <position>js-contactmap2</position>
+    <position>js-contactmap3</position>
+    <position>js-contactadd1</position>
+    <position>js-contactadd2</position>
+    
+    <!-- Home 1 -->
+    <position>js-recentworks2</position>
+    <position>home1_js-features31</position>
+    <position>home1_js-parallax4</position>
+    
+    <!--home 2 -->
+    <position>home2_js-features12</position>
+    <position>home2_js-features33</position>
+    <position>home2_js-features34</position>
+    <position>home2_js-features3</position>
+    <position>home2_js-parallax5</position>
+    <position>home2_js-features6</position>
+    <position>home2_js-features14</position>
+    
+    <!--home 3 -->
+    <position>home3_js-features35</position>
+    <position>home3_js-features36</position>
+    <position>home3_js-recentwork</position>
+    <position>home3_js-features11</position>
+    
+    <!-- Home 4 -->
+    <position>home4_js-features37</position>
+    <position>home4_js-features33</position>
+    <position>home4_js-features38</position>
+    
+    <!-- Home 5 -->
+    <position>home5_js-features7</position>
+    <position>home5_js-features39</position>
+    <position>home5_js-features40</position>
+    <position>home5_js-features9</position>
+    
+    <!-- Home 6 -->
+    <position>home6_js-features41</position>
+    <position>home6_js-features42</position>
+    
+    <!-- Home 7 -->
+    <position>home7_js-ultimate</position>
+    <position>home7_js-counters</position>
+    <position>home7_js-features53</position>
+    <position>home7_js-features14</position>
+    <position>home7_js-features33</position>
+    
+    <!-- Home 8 -->
+    <position>home8_js-features43</position>
+    <position>home8_js-features44</position>
+    <position>home8_js-features12</position>
+    
+    <!-- Home 9 -->
+    <position>home9_js-features3</position>
+    <position>home9_js-info</position>
+    <position>home9_js-parallax6</position>
+    
+    <!-- Home 10 -->
+    <position>home10_js-features45</position>
+    <position>home10_js-features46</position>
+    <position>home10_js-parallax7</position>
+    
+    <!-- Home 11 -->
+    <position>home11_js-features47</position>
+    <position>home11_js-slider</position>
+    <position>home11_js-features44</position>
+    
+    <!-- Home 12 -->
+    <position>home12_js-features48</position>
+    <position>home12_js-features39</position>
+    <position>home12_js-features49</position>
+    
+    <!-- Home 13 -->
+    <position>home13_js-features45</position>
+    <position>home13_js-features12</position>
+    <position>home13_js-features51</position>
+    <position>home13_js-features52</position>
+    
+    <!-- One Page -->
+    
+    <position>op-menu</position>
+    <position>op-slideshow</position>
+    <position>op-about1</position>
+    <position>op-about2</position>
+    <position>op-numbers</position>
+    <position>op-services1</position>
+    <position>op-services2</position>
+    <position>op-services3</position>
+    <position>op-services4</position>
+    <position>op-pricing</position>
+    <position>op-clients</position>
+    <position>op-recentblog</position>
+    <position>op-help</position>
+    <position>op-addressinfo</position>
+    <position>op-map</position>
+    <position>op-contact</position>
+    
+    <!-- Coming soon -->
+    <position>js-subscribe</position>
+  </positions>
+  <config>
+    <fields name="params">
+      <fieldset name="LOGOOPTIONS">
+        <field label="LOGOINFO"  type="spacer" class="alert alert-blue"/>
+        <field name="logoFile" class="" type="media" default=""
+					label="LOGO"
+					description="Add Logo" />
+      </fieldset>
+      <fieldset name="COLOROPTIONS">
+        <field label="COLORINFO"  type="spacer" class="alert alert-blue"/>
+        <field name="themecolor" type="list" default="blu" label="SELECT THEME COLOR CODE" description="Select Theme Color" >
+          <option value="default">Default</option>
+          <option value="blue">blue</option>
+          <option value="bridge">bridge</option>
+          <option value="cyan">cyan</option>
+          <option value="darkred">darkred</option>
+          <option value="green">green</option>
+          <option value="lightblue">lightblue</option>
+          <option value="orange">orange</option>
+          <option value="pink">pink</option>
+          <option value="purple">purple</option>
+          <option value="slate">slate</option>
+          <option value="yellow">yellow</option>
+        </field>
+      </fieldset>
+      <fieldset name="HOME_VERSION">
+        <field label="HOME VERSION_INFO" type="spacer" class="alert-blue"/>
+        <field name="home" type="list" default="home" label="Choose your Home" description="Choose your Layout">
+          <option value="home_default">Home Defaut</option>
+          <option value="home1">Home Layout 1</option>
+          <option value="home2">Home Layout 2</option>
+          <option value="home3">Home Layout 3</option>
+          <option value="home4">Home Layout 4</option>
+          <option value="home5">Home Layout 5</option>
+          <option value="home6">Home Layout 6</option>
+          <option value="home7">Home Layout 7</option>
+          <option value="home8">Home Layout 8</option>
+          <option value="home9">Home Layout 9</option>
+          <option value="home10">Home Layout 10</option>
+          <option value="home11">Home Layout 11</option>
+          <option value="home12">Home Layout 12</option>
+          <option value="home13">Home Layout 13</option>
+          <option value="home14">Home Layout 14</option>
+          <option value="home15">Text Slider</option>
+          <option value="home16">Header with Portfolio</option>
+          <option value="home17">Slider with Form</option>
+          <option value="home18">Form in Header</option>
+          <option value="home19">Home Layout 19</option>
+          <option value="home20">Home Layout 20</option>
+          <option value="home21">Home Layout 21</option>
+          <option value="home22">Home Layout 22</option>
+          <option value="home23">Home Layout 23</option>
+          <option value="home24">Home Layout 24</option>
+          <option value="home25">Home Layout 25</option>
+          <option value="onepage">One Page</option>
+          <option value="comingsoon">Coming Soon</option>
+        </field>
+      </fieldset>
+      <fieldset name="LAYOUTOPTIONS">
+        <field label="LAYOUTINFO"  type="spacer" class="alert alert-blue"/>
+        <field name="layout" type="list" default="full" label="LAYOUT" description="Select Full Layout or Boxed Layout" >
+          <option value="full">Full Layout</option>
+          <option value="boxed">Boxed Layout</option>
+        </field>
+      </fieldset>
+      <fieldset name="PATTERNOPTIONS">
+        <field label="PATTERNINFO"  type="spacer" class="alert alert-blue"/>
+        <field name="pattern" type="list" default="default" label="PATTERN" description="Select Pattern for Boxed Layout" >
+          <option value="default">Pattern Default</option>
+          <option value="1">Pattern 1</option>
+          <option value="2">Pattern 2</option>
+          <option value="3">Pattern 3</option>
+          <option value="4">Pattern 4</option>
+          <option value="5">Pattern 5</option>
+          <option value="6">Pattern 6</option>
+          <option value="7">Pattern 7</option>
+          <option value="8">Pattern 8</option>
+          <option value="9">Pattern 9</option>
+          <option value="10">Pattern 10</option>
+          <option value="11">Pattern 11</option>
+        </field>
+      </fieldset>
+	  <fieldset name="CONTACT_DETAIL">
+        <field label="CONTACT_US_INFO"  type="spacer" class="alert-blue"/>
+        <field name="con_line1" type="text" label="Heading Line1" description="Enter the Heading line 1"  size="70"/>
+        <field name="con_line2" type="text" label="Heading Line2" description="Enter the Heading line 2"  size="70"/>
+        <field name="con_line3" type="text" label="Heading Line3" description="Enter the Heading line 3"  size="70"/>
+      </fieldset>
+      <fieldset name="SOCIALOPTIONS">
+        <field label="SOCIALINFO"  type="spacer" class="alert-blue"/>
+        <field name="social" type="radio" label="SHOWSOCIAL" description="Enable / Disable social icon" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="facebook" type="radio" label="Show Facebook" description="Facebook" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="facebooklink" type="text" label="Facebook Url" description="Facebook link" size="50" />
+        <field name="twitter" type="radio" label="Show Twitter" description="Twitter" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="twitterlink" type="text" label="Twitter Url" description="Twitter link" size="50" />
+        <field name="googleplus" type="radio" label="Show Google Plus" description="Google" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="googlepluslink" type="text" label="Google Plus Url" description="Google plus link" size="50" />
+        <field name="linkedin" type="radio" label="Show LinkedIn" description="Link of Delicious" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="linkedinlink" type="text" label="LinkedIn Url" description="Linkedin link" size="50" />
+        <field name="behance" type="radio" label="Show behance" description="behance" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="behancelink" type="text" label="Behance Url" description="behance" size="50" />
+        <field name="flicker" type="radio" label="Show Flickr" description="Flicker" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="flickerlink" type="text" label="Flickr Url" description="Flicker Id" size="50" />
+        <field name="youtube" type="radio" label="Show Youtube" description="Link of youtube" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="youtubelink" type="text" label="Youtube Url" description="Link of Youtube Channel" size="50" />
+        <field name="dribbble" type="radio" label="Show Dribble" description="Dribble" default="1" checked="checked" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="dribbblelink" type="text" label="Dribble" description="Link of Dribble" size="50" />
+      </fieldset>
+      <fieldset name="TITLES">
+        <field label="TITLE_INFO"  type="spacer" class="alert alert-blue"/>
+        <field name="opblogtitle" type="text" label="One Page Blog title" description="One Page Blog Title" />
+        <field name="opblogdesc" type="textarea" rows="2" cols="30" filter="raw" label="One Page Blog Description" description="One Page Blog Description" />
+		<field name="cstitle" type="text" label="Coming Soon title" description="Coming Soon Title" />
+        <field name="csdesc" type="textarea" rows="2" cols="30" filter="raw" label="Coming Soon Description" description="Coming Soon Description" />
+		<field name="ctitle1" type="text" label="Contact title 1 for slider with form" description="Contact title 1" />
+		<field name="ctitle2" type="text" label="Contact title 2 for slider with form" description="Contact title 2" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>

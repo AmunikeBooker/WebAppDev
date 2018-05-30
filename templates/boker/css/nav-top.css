@@ -1,0 +1,274 @@
+  #nav-top {
+ margin-top:0px;
+  transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms; 
+	width:100%;
+
+} 
+
+ ul.menu #toggle ,
+ul.menu #hide{
+display: none ;
+}
+
+  #navigation ul.menu {
+ margin:0 0 0 0 !important;
+padding:0 !important; 
+position:relative !important;
+display:inline-block !important ;
+}
+
+#navigation ul.menu li {
+ margin:0 !important;
+padding:0 0 0px 0 !important; 
+float:left !important;
+outline: none !important;
+position:relative !important;
+list-style:none !important; 
+background:transparent;
+}
+
+
+ #navigation ul.menu li a {
+padding:10px 10px 10px 10px ; 
+ margin:37px 10px 25px 10px; 
+text-decoration:none !important;
+text-transform: uppercase !important ;
+display:inline-block !important ;
+font-weight:900; 
+ height:20px;
+font-size:11px ;
+letter-spacing:2px;
+transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
+	
+} 
+
+#navigation ul.menu li a:hover {
+/* text-decoration: line-through !important; */
+transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
+		/* background: url(../images/bg-h3.png) 0% 100% no-repeat; */
+}
+
+#navigation ul.menu li.active a   {
+background: url(../images/bg-h3.png) 50% 100% no-repeat;
+}
+
+/****** dropdown Navigation ******/
+#navigation ul.menu li:hover > ul{
+visibility:visible!important ;
+opacity:1 !important ;
+}
+
+#navigation ul.menu ul {
+list-style: none !important ;
+margin: 0 !important;
+padding: 0 !important;    
+visibility:hidden !important;
+position: absolute !important;
+z-index: 999  !important;
+width:220px !important;
+opacity:0 !important;
+-webkit-transition:opacity 0.2s linear, visibility 0.2s linear !important; 
+-moz-transition:opacity 0.2s linear, visibility 0.2s linear !important; 
+-o-transition:opacity 0.2s linear, visibility 0.2s linear !important; 
+transition:opacity 0.2s linear, visibility 0.2s linear !important;  
+ box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1); 
+background:url(../images/bg-menu.png) 0 0px no-repeat !important ;
+padding-top:10px !important; 
+}
+
+#navigation ul.menu ul {
+top: 90px !important;
+left: 0 !important;
+}
+
+#navigation ul.menu ul:after{
+clear:both !important;
+display:block !important;
+}
+
+#navigation ul.menu ul li ul {
+top: 0px !important;
+left: 200px !important;
+}
+
+#navigation ul.menu ul li {
+clear:both !important;
+width:100% !important;
+border:0 none !important;
+text-align:center !important;
+border-bottom:1px solid #333333 !important;  
+display:block !important;
+ background:#000 !important;
+ padding:0 !important;
+ margin:0 !important;
+}
+
+#navigation ul.menu ul li a {
+background:none !important;
+padding:0px 0 0px 15px !important;
+text-decoration:none !important;
+display:block !important;
+border:none !important;
+float:left !important;
+height:20px !important;
+ margin:20px 0 !important;
+ line-height:20px !important; 
+} 
+
+div#navigation > ul#menu.menu li.deeper.parent a:after{
+content: "\f0dd" !important;  
+content: "" !important;  
+font-family: fontawesome;
+color:#000;
+font-weight:normal;
+padding-left:5px;
+}
+
+div#navigation > ul#menu.menu li.deeper.parent a:before{
+content: "" !important; 
+font-family: fontawesome;
+}
+
+div#navigation > ul#menu.menu li.deeper.parent > ul.navig > li.deeper.parent > a:after{
+content: "" !important;
+font-family: fontawesome;
+}
+
+div#navigation > ul#menu.menu li.deeper.parent > ul.navig > li.deeper.parent > a:before{
+content: "" !important;
+}
+
+div#navigation > ul#menu.menu li.deeper.parent a{
+} 
+
+#navigation ul.menu ul li a {
+-webkit-transition: all 0.2s ease-in-out !important;	
+-moz-transition: all 0.2s ease-in-out !important;
+-o-transition: all 0.2s ease-in-out !important;
+transition: all 0.2s ease-in-out !important; 
+} 
+
+#navigation ul.menu ul li a:hover {
+padding:0px 0 0 20px !important;
+text-decoration:none !important;
+display:block !important; 
+border:0 none !important;
+width:200px !important;
+text-align:left !important; 
+ -webkit-transition: all 0.4s ease-in-out !important;	
+-moz-transition: all 0.4s ease-in-out !important;
+-o-transition: all 0.4s ease-in-out !important;
+transition: all 0.4s ease-in-out !important;  
+height:60px;
+} 
+
+div#navigation > ul#menu.menu li.deeper.parent > ul.navig > li a:after{
+content:"" !important;  
+}  
+
+#navigation ul.menu ul li ul   {
+background:#252525 !important;
+} 
+
+div.modal-content {
+ text-align: center !important;
+ background:red;
+}
+
+ #navigation-res {
+  padding:0;
+  margin-top:20px  ; 
+  list-style:none;
+  text-align: center !important;
+  width:100%;
+   float:none;
+   margin-left:auto;
+   margin-right:auto;
+}
+#navigation-res ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center !important;
+}
+#navigation-res li {
+   margin-bottom:20px;
+   
+}
+ #navigation-res li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#navigation-res a {
+  display:block;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size:22px !important;
+  text-transform:uppercase;
+  
+}
+#navigation-res ul li a, #navigation-res li:hover li a {
+  font-size:1em;
+  color:#fff !important;
+}
+
+ #navigation-res li a:hover {
+   color:#727884 !important;
+ }
+
+ #navigation-res li:hover li {
+  max-height: 15em;
+}
+
+div#navigation-res ul#menu.menu li.deeper.parent a:after{
+ content: "\f0dd" !important;   
+font-family: fontawesome;
+color:#fff;
+font-weight:normal;
+padding-left:10px;
+}
+
+ div#navigation-res > ul#menu.menu li.deeper.parent a:before{
+content: "" !important; 
+font-family: fontawesome;
+}
+
+div#navigation-res > ul#menu.menu li.deeper.parent > ul.navig > li.deeper.parent > a:after{
+content: "" !important;
+font-family: fontawesome;
+}
+
+div#navigation-res > ul#menu.menu li.deeper.parent > ul.navig > li.deeper.parent > a:before{
+content: "" !important;
+font-family: fontawesome;
+}
+
+
+#navigation-res ul#menu.menu > li.deeper.parent > ul.navig > li > a:after{
+content: "" !important; 
+font-family: fontawesome;
+}
+
+#navigation-res ul.menu ul li a {
+font-size:18px !important;
+text-transform:capitalize;
+ }
+
+

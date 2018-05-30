@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* Boxed */
+
+body {
+	background: url(../images/elements/bg.png) repeat left top;
+}
+.menu_shape_shadow
+{
+	width:1240px!important;
+}
+.rev_slider_wrapper {
+	width: 100% !important;
+	left: 0!important;
+}
+.tp-rightarrow {
+	right: 10px!important;
+}
+.tp-leftarrow {
+	left: 10px!important;
+}
+.tp-bullets {
+	left: 55%!important;
+}
+.ms-view , .menu_shadow
+ {
+	 width:1240px!important;
+ }
+.features_sec3 span , .features_sec41 span , .features_sec41 [data-icon]::before , .features_sec44 span ,
+.features_sec44 [data-icon]::before{
+    line-height: 2.5;
+}
+.features_sec35 i {
+    line-height: 3.5;
+}
+.master-slider {
+    margin: 0 auto !important;
+    width: 100% !important;
+}
